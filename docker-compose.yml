@@ -7,9 +7,9 @@ services:
       - '3307:3307'
     environment:
        MYSQL_DATABASE: 'demodb'
-       MYSQL_USER: 'root'
-       MYSQL_PASSWORD: ''
-       MYSQL_ROOT_PASSWORD: ''
+       MYSQL_USER: 'newuser'
+       MYSQL_PASSWORD: 'password'
+       MYSQL_ROOT_PASSWORD: 'root'
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
